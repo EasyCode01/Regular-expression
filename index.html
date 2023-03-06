@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Test for simple text on regex101
+    using global and case insensite
+    -->
+
     
+    <section>
+        <form action="">
+            <div class="form__title">New User Signup</div>
+            <div class="text-field">
+                <input placeholder="username" type="text" name="username" id="username">
+                <span class="info">username must be filled and contain 
+                    5 - 12 characters
+                </span>
+            </div>
+            <div class="text-field">
+                <input placeholder="email" type="text" name="email" id="email">
+                <span class="info"> email must be a vaild address e.g 
+                    me@mydomain.com
+                </span>
+            </div>
+
+            <div class="text-field">
+                <input placeholder="password" type="password" name="password" id="password">
+                <span class="info">pass word must be alphanumeric (@ _ and - are also allowed)
+                    and be 8 - 20 character
+                </span>
+            </div>
+            <div class="text-field">
+                <input placeholder="telephone" type="text" name="telephone" id="telephone">
+                <span class="info">Telephone must be a valid Nigeria telephone number (11 digits)
+                </span>
+            </div>
+
+            <div class="text-field">
+                <input placeholder="profile slug" type="text" name="profile-slug" id="profile_slug">
+                <span class="info">slug must constain only a lowercase letters, numbers and hypen
+                    and 8 - 20 characters
+                </span>
+            </div>
+        </form>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
