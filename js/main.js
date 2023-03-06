@@ -4,11 +4,21 @@
 
 const inputs = document.querySelectorAll('input');
 
+// email verification
+//   1           2              3       4 
+//(yourname) @ (domain) . (extension)(.again)
+
+// yourname - any letters, numbers, dots and/or hyphens
+// domain - any letters, numbers and/or hyphens
+// extensions - any letters
+// a dot(.) then any letters
+
 const patterns = {
     telephone: /^\d{11}$/,
     username: /^[a-z\d]{5,11}$/i,
     password: /^[\w@-]{8,20}$/ ,
-    slug : /^[a-z\d-]{8,20}$/
+    slug : /^[a-z\d-]{8,20}$/,
+    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
 }
 
 function validate(field, regex){
